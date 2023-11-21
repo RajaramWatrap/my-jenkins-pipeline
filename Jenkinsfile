@@ -1,10 +1,16 @@
 pipeline {
     agent any
-    
-    stage('Build and Test') {
+    stages {
+        stage('Build and Test') {
             steps {
                 sh 'chmod +x script.sh'
                 sh './script.sh'
             }
         }
+        stage('Deploy') {
+            steps {
+                // Add deployment steps if needed
+            }
+        }
+    }
 }
