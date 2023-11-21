@@ -9,7 +9,9 @@ pipeline {
         }
         stage('Deploy') {
             steps {
-                // Add deployment steps if needed
+                // Add deployment steps here
+                // For example:
+                sh 'echo "Deploying..."'
             }
         }
     }
